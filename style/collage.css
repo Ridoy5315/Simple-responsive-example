@@ -6,7 +6,6 @@
 .row{
      height: 300px;
      display: flex;
-     
      gap: 5px;
      margin-top: 5px;
 }
@@ -21,7 +20,21 @@
      grid-template-columns: repeat(2,1fr);
      gap: 5px;
 }
-.square img {
+/* .square img {
      height: 147px;
+} */
+@media screen and (max-width:576px) {
+     .row{
+          flex-direction: column;
+          height: auto;
+     }
+     .square{
+          grid-template-columns: repeat(1, 1fr);
+     }
 }
-
+@media screen and (min-width:577px) and (max-width:992px) {
+     .row{
+          flex-direction: column;
+          height: auto;
+     }
+}
